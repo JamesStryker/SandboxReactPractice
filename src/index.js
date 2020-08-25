@@ -1,12 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDom from "react-dom";
 
-import App from "./App";
+var yourName = "James";
+var year = new Date().getFullYear();
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  rootElement
+ReactDom.render(
+  <div className="App">
+    <p className="heading">{yourName}</p>
+    <p>{year}</p>
+  </div>,
+  document.getElementById("root")
 );
