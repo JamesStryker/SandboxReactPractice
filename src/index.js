@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
+import List from "./list";
 
 var greeting = "";
 var dt = new Date();
@@ -23,6 +24,7 @@ ReactDom.render(
   <div>
     <h1>{greeting}</h1>
     <h2>It is now {time}</h2>
+    <List />
   </div>,
   document.getElementById("root")
 );
